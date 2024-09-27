@@ -1,7 +1,9 @@
 # Spring Boot Microservices
-This repository contains the latest source code of the spring-boot-microservices tutorial
+We will be building a simple e-commerce application where customers can order products. Our application contains the 4 services.
+To focus on Spring Cloud and Microservices principles, we will develop services with essential functionality rather than creating fully-featured e-commerce services.
 
-You can watch the tutorial on Youtube [here](https://youtu.be/yn_stY3HCr8?si=EjrBEUl0P-bzSWRG)
+The architecture diagram of the project:
+![image](https://github.com/user-attachments/assets/8c9a622a-16c1-4e45-a959-509d01248ee2)
 
 ## Services Overview
 
@@ -33,9 +35,6 @@ The technologies used in this project are:
 - Grafana Stack (Prometheus, Grafana, Loki and Tempo)
 - API Gateway using Spring Cloud Gateway MVC architecture
 
-
-## Application Architecture
-![image](https://github.com/user-attachments/assets/d4ef38bd-8ae5-4cc7-9ac5-7a8e5ec3c969)
 
 ## How to run the frontend application
 
