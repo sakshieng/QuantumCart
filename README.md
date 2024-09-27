@@ -2,8 +2,6 @@
 We will be building a simple e-commerce application where customers can order products. Our application contains the 4 services.
 To focus on Spring Cloud and Microservices principles, we will develop services with essential functionality rather than creating fully-featured e-commerce services.
 
-The architecture diagram of the project:
-![image](https://github.com/user-attachments/assets/8c9a622a-16c1-4e45-a959-509d01248ee2)
 
 ## Services Overview
 
@@ -23,6 +21,9 @@ The architecture diagram of the project:
   - Adds, updates, and deletes product data.
   - Interacts with the Inventory Service to maintain accurate stock information.
     
+## The architecture diagram of the project:
+![image](https://github.com/user-attachments/assets/8c9a622a-16c1-4e45-a959-509d01248ee2)
+
 ## Tech Stack
 
 The technologies used in this project are:
