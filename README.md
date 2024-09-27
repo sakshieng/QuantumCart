@@ -5,20 +5,20 @@ You can watch the tutorial on Youtube [here](https://youtu.be/yn_stY3HCr8?si=Ejr
 
 ## Services Overview
 
-1. Inventory Service
+#### 1. Inventory Service
 - Provides APIs to check the stock of products.
 - Updates stock on order confirmation.
   
-2. Order Service
+#### 2. Order Service
 - Accepts order requests.
 - Manages the order lifecycle from placement to fulfillment.
   
-3. Notification Service
+#### 3. Notification Service
 - Listens to Kafka topics for events such as `order_placed` or `stock_updated`.
 - Sends notifications based on these events (e.g., Email or SMS notifications).
 
-4. Product Service
-  -Adds, updates, and deletes product data.
+#### 4. Product Service
+  - Adds, updates, and deletes product data.
   - Interacts with the Inventory Service to maintain accurate stock information.
     
 ## Tech Stack
