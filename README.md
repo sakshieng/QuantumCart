@@ -9,23 +9,18 @@ You can watch the tutorial on Youtube [here](https://youtu.be/yn_stY3HCr8?si=Ejr
 - Order Service
 - Inventory Service
 - Notification Service
-- API Gateway using Spring Cloud Gateway MVC
-- Shop Frontend using Angular 18
-
+- 
 ## Tech Stack
 
 The technologies used in this project are:
 
 - Spring Boot
-- Angular
 - Mongo DB
 - MySQL
 - Kafka
 - Keycloak
-- Test Containers with Wiremock
 - Grafana Stack (Prometheus, Grafana, Loki and Tempo)
-- API Gateway using Spring Cloud Gateway MVC
-- Kubernetes
+- API Gateway using Spring Cloud Gateway MVC architecture
 
 
 ## Application Architecture
@@ -37,7 +32,6 @@ Make sure you have the following installed on your machine:
 
 - Node.js
 - NPM
-- Angular CLI
 
 Run the following commands to start the frontend application
 
@@ -66,18 +60,18 @@ Make sure you have the following installed on your machine:
 
 ### Start Kind Cluster
     
-Run the k8s/kind/create-kind-cluster.sh script to create the kind Kubernetes cluster
+Run the k8s/kind/create-kind-cluster.sh script to create the kind of Kubernetes cluster
 
-```shell
+``` shell
 ./k8s/kind/create-kind-cluster.sh
 ```
-This will create a kind cluster and pre-load all the required docker images into the cluster, this will save you time downloading the images when you deploy the application.
+This will create a kind cluster and pre-load all the required Docker images into it. This will save you time downloading the images when you deploy the application.
 
 ### Deploy the infrastructure
 
 Run the k8s/manisfests/infrastructure.yaml file to deploy the infrastructure
 
-```shell
+``` shell
 kubectl apply -f k8s/manifests/infrastructure.yaml
 ```
 
@@ -98,7 +92,7 @@ kubectl port-forward svc/gateway-service 9000:9000
 ```
 
 ### Access the Keycloak Admin Console
-To access the Keycloak admin console, you need to port-forward the keycloak service to your local machine
+To access the Keycloak admin console, you need to port-forward the Keycloak service to your local machine
 
 ```shell
 kubectl port-forward svc/keycloak 8080:8080
